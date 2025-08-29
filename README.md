@@ -38,6 +38,25 @@
 
 ### 1. Установка ESP-IDF
 
+#### Windows (рекомендуемый способ)
+1. Скачайте ESP-IDF Windows Installer: https://dl.espressif.com/dl/esp-idf/
+2. Запустите установщик и следуйте инструкциям
+3. ESP-IDF будет установлен в `C:\Espressif\frameworks\esp-idf-v5.3.2\`
+
+#### Windows (ручная установка)
+```cmd
+# Клонируйте ESP-IDF
+git clone --recursive https://github.com/espressif/esp-idf.git
+cd esp-idf
+
+# Установите ESP-IDF
+install.bat
+
+# Активируйте окружение
+export.bat
+```
+
+#### Linux/Mac
 ```bash
 # Клонируйте ESP-IDF
 git clone --recursive https://github.com/espressif/esp-idf.git
@@ -73,6 +92,12 @@ idf.py menuconfig
 
 ### 4. Компиляция
 
+#### Быстрая сборка (Windows)
+```cmd
+build_and_flash.bat
+```
+
+#### Ручная сборка
 ```bash
 # Соберите проект
 idf.py build
@@ -183,6 +208,11 @@ sdkconfig               # Конфигурация SDK
    - Проверьте LED индикатор
    - Убедитесь, что рядом есть Zigbee координатор
    - Попробуйте перезапустить пейринг
+
+4. **Ошибка NVS шифрования**
+   - Используйте обновленный `sdkconfig.defaults`
+   - Очистите проект: `idf.py fullclean`
+   - Пересоберите: `idf.py build`
 
 ### Логи
 

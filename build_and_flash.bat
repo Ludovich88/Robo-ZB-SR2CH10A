@@ -3,13 +3,11 @@ echo ========================================
 echo ESP32-C6 Smart Relay Build and Flash
 echo ========================================
 
-REM Check if ESP-IDF environment is available
-if not defined IDF_PATH (
-    echo ERROR: ESP-IDF environment not found!
-    echo Please run 'get_idf' or 'idf.py set-target esp32c6' first
-    pause
-    exit /b 1
-)
+REM Activate ESP-IDF environment
+echo Activating ESP-IDF environment...
+set IDF_PATH=C:\Espressif\frameworks\esp-idf-v5.3.2
+set IDF_TOOLS_PATH=C:\Espressif\tools
+set PATH=%IDF_PATH%\tools;%IDF_TOOLS_PATH\xtensa-esp32-elf\esp-12.2_20230408\xtensa-esp32-elf\bin;%IDF_TOOLS_PATH\riscv32-esp-elf\esp-12.2_20230408\riscv32-esp-elf\bin;%IDF_TOOLS_PATH\esp32ulp-elf\2.35_20220830\esp32ulp-elf\bin;%IDF_TOOLS_PATH\cmake\3.24.0\bin;%IDF_TOOLS_PATH\openocd-esp32\v0.12.0_esp32-20230419\openocd-esp32\bin;%IDF_TOOLS_PATH\ninja\1.10.2;%IDF_TOOLS_PATH\idf-exe\1.0.3;%IDF_TOOLS_PATH\ccache\4.8\ccache-4.8-windows-x86_64;%IDF_TOOLS_PATH\dfu-util\0.11\dfu-util-0.11-win64;%IDF_TOOLS_PATH\esp-rom-elfs\20230320;%PATH%
 
 echo.
 echo 1. Setting target to ESP32-C6...
