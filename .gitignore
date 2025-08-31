@@ -1,6 +1,6 @@
 # ESP-IDF build artifacts
-build/
-sdkconfig.old
+# build/
+# sdkconfig.old
 
 # IDE files
 .vscode/

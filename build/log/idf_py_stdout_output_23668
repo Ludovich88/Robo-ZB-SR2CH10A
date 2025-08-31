@@ -1,0 +1,18 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] C:\Windows\system32\cmd.exe /C "cd /D C:\Users\ludov\github\GitHub_Ludovich88\Robo-ZB-SR2CH10A\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.3.2/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 C:/Users/ludov/github/GitHub_Ludovich88/Robo-ZB-SR2CH10A/build/bootloader/bootloader.bin"
+Bootloader binary size 0x56f0 bytes. 0x2910 bytes (32%) free.
+[2/9] No install step for 'bootloader'
+[3/9] Completed 'bootloader'
+[4/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/Robo_SR2CH_10A.c.obj
+[5/9] Linking C static library esp-idf\main\libmain.a
+[6/9] Generating ld/sections.ld
+[7/9] Linking CXX executable Robo_SR2CH_10A.elf
+[8/9] Generating binary image from built executable
+esptool.py v4.9.0
+Creating esp32c6 image...
+MMU page size not specified, set to 64 KB
+Merged 1 ELF section
+Successfully created esp32c6 image.
+Generated C:/Users/ludov/github/GitHub_Ludovich88/Robo-ZB-SR2CH10A/build/Robo_SR2CH_10A.bin
+[9/9] C:\Windows\system32\cmd.exe /C "cd /D C:\Users\ludov\github\GitHub_Ludovich88\Robo-ZB-SR2CH10A\build\esp-idf\esptool_py && C:\Espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.3.2/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/ludov/github/GitHub_Ludovich88/Robo-ZB-SR2CH10A/build/partition_table/partition-table.bin C:/Users/ludov/github/GitHub_Ludovich88/Robo-ZB-SR2CH10A/build/Robo_SR2CH_10A.bin"
+Robo_SR2CH_10A.bin binary size 0x6bc70 bytes. Smallest app partition is 0xe0000 bytes. 0x74390 bytes (52%) free.

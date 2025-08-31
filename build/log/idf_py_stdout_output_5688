@@ -1,0 +1,105 @@
+[0;32mI (18) boot: ESP-IDF v5.3.2-dirty 2nd stage bootloader[0m
+[0;32mI (18) boot: compile time Aug 31 2025 11:48:22[0m
+[0;32mI (19) boot: chip revision: v0.1[0m
+[0;32mI (21) boot: efuse block revision: v0.2[0m
+[0;32mI (26) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (31) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (35) boot.esp32c6: SPI Flash Size : 4MB[0m
+[0;32mI (40) boot: Enabling RNG early entropy source...[0m
+[0;32mI (46) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 000e0000[0m
+[0;32mI (79) boot:  3 zb_storage       Unknown data     01 81 000f1000 00004000[0m
+[0;32mI (86) boot:  4 zb_fct           Unknown data     01 81 000f5000 00000400[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=42050020 size=0e8e4h ( 59620) map[0m
+[0;32mI (118) esp_image: segment 1: paddr=0001e90c vaddr=40800000 size=0170ch (  5900) load[0m
+[0;32mI (120) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=4bab0h (309936) map[0m
+[0;32mI (182) esp_image: segment 3: paddr=0006bad8 vaddr=4080170c size=0e0b8h ( 57528) load[0m
+[0;32mI (195) esp_image: segment 4: paddr=00079b98 vaddr=4080f7d0 size=020ach (  8364) load[0m
+[0;32mI (201) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (201) boot: Disabling RNG early entropy source...[0m
+[0;32mI (215) cpu_start: Unicore app[0m
+[0;32mI (224) cpu_start: Pro cpu start user code[0m
+[0;32mI (224) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (224) app_init: Application information:[0m
+[0;32mI (227) app_init: Project name:     Robo_SR2CH_10A[0m
+[0;32mI (232) app_init: App version:      b0f53bd-dirty[0m
+[0;32mI (238) app_init: Compile time:     Aug 31 2025 11:48:08[0m
+[0;32mI (244) app_init: ELF file SHA256:  979995d76...[0m
+[0;32mI (249) app_init: ESP-IDF:          v5.3.2-dirty[0m
+[0;32mI (254) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (259) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (264) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (269) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (276) heap_init: At 40815B10 len 00066B00 (410 KiB): RAM[0m
+[0;32mI (282) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM[0m
+[0;32mI (288) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (295) spi_flash: detected chip: generic[0m
+[0;32mI (299) spi_flash: flash io: dio[0m
+[0;32mI (303) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (310) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (317) coexist: coex firmware version: cbb41d7[0m
+[0;32mI (345) coexist: coexist rom version 5b8dcfa[0m
+[0;32mI (345) main_task: Started on CPU0[0m
+[0;32mI (345) main_task: Calling app_main()[0m
+[0;32mI (345) SMART_RELAY: Starting Smart Relay Application[0m
+[0;32mI (355) SMART_RELAY: NVS initialized successfully[0m
+[0;32mI (355) SMART_RELAY: GPIO event queue created[0m
+[0;32mI (355) SMART_RELAY: Initializing GPIO...[0m
+[0;32mI (365) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (375) gpio: GPIO[1]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (385) gpio: GPIO[18]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (395) gpio: GPIO[19]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (395) gpio: GPIO[14]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (405) gpio: GPIO[15]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (415) gpio: GPIO[2]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:1 [0m
+[0;32mI (425) SMART_RELAY: GPIO initialized successfully[0m
+[0;32mI (435) SMART_RELAY: Initializing LED...[0m
+[0;32mI (435) SMART_RELAY: LED GPIO initialized successfully[0m
+[0;32mI (445) SMART_RELAY: Initializing UART...[0m
+[0;32mI (445) SMART_RELAY: UART initialized successfully[0m
+[0;32mI (455) SMART_RELAY: Initializing Zigbee...[0m
+[0;32mI (455) SMART_RELAY: Initializing Zigbee...[0m
+[0;32mI (465) phy_init: phy_version 320,348a293,Sep  3 2024,16:33:12[0m
+[0;32mI (535) phy: libbtbb version: 04952fd, Sep  3 2024, 16:33:30[0m
+[0;32mI (535) SMART_RELAY: Zigbee initialized successfully as End Device (can become Router)[0m
+[0;32mI (535) SMART_RELAY: Creating tasks...[0m
+[0;32mI (535) SMART_RELAY: Status LED task started[0m
+[0;32mI (545) SMART_RELAY: Energy monitoring task started[0m
+[0;32mI (545) SMART_RELAY: Button task started[0m
+[0;32mI (555) SMART_RELAY: Zigbee task started[0m
+[0;32mI (555) SMART_RELAY: Starting Zigbee stack...[0m
+[0;32mI (565) SMART_RELAY: Starting Zigbee...[0m
+[0;32mI (585) SMART_RELAY: Zigbee started successfully[0m
+[0;32mI (1585) SMART_RELAY: Smart Relay Application started successfully[0m
+[0;32mI (1585) SMART_RELAY: Features:[0m
+[0;32mI (1585) SMART_RELAY: - Zigbee Router mode[0m
+[0;32mI (1585) SMART_RELAY: - Energy monitoring via BL0940[0m
+[0;32mI (1595) SMART_RELAY: - External switch control[0m
+[0;32mI (1595) SMART_RELAY: - Button pairing (long press 5-10s)[0m
+[0;32mI (1605) SMART_RELAY: - Single click: Relay 1, Double click: Relay 2[0m
+[0;32mI (1605) SMART_RELAY: You can now connect via UART to see logs[0m
+[0;32mI (1615) main_task: Returned from app_main()[0m
+[0;32mI (14455) SMART_RELAY: Pairing button pressed[0m
+[0;32mI (23095) SMART_RELAY: Pairing button released[0m
+[0;32mI (23095) SMART_RELAY: Long press detected - starting pairing mode[0m
+[0;32mI (23095) SMART_RELAY: Starting Zigbee commissioning...[0m
+[0;32mI (23115) SMART_RELAY: Zigbee commissioning started successfully[0m
+[0;32mI (23555) SMART_RELAY: Attempting to join Zigbee network...[0m
+[0;32mI (29555) SMART_RELAY: Attempting to join Zigbee network...[0m
+[0;32mI (35555) SMART_RELAY: Attempting to join Zigbee network...[0m
+[0;32mI (41555) SMART_RELAY: Attempting to join Zigbee network...[0m
+[0;32mI (47555) SMART_RELAY: Attempting to join Zigbee network...[0m
+[0;32mI (53555) SMART_RELAY: Attempting to join Zigbee network...[0m
+[0;32mI (59555) SMART_RELAY: Attempting to join Zigbee network...[0m
+[0;32mI (65555) SMART_RELAY: Attempting to join Zigbee network...[0m
+[0;32mI (71555) SMART_RELAY: Attempting to join Zigbee network...[0m
+[0;32mI (77555) SMART_RELAY: Attempting to join Zigbee network...[0m
+[0;32mI (83555) SMART_RELAY: Attempting to join Zigbee network...[0m
+[0;32mI (89555) SMART_RELAY: Attempting to join Zigbee network...[0m
+[0;32mI (95555) SMART_RELAY: Attempting to join Zigbee network...[0m
+[0;32mI (101555) SMART_RELAY: Attempting to join Zigbee network...[0m
+[0;32mI (107555) SMART_RELAY: Attempting to join Zigbee network...[0m
